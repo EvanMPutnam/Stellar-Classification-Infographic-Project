@@ -35,4 +35,4 @@ for key in stellar_classification_data:
         draw.text((x - 15, y-150), key, fill = 'white', font = FONT_NASA)
 
 #Save the image.
-img.save("../imgs/circles.png")
+img.save("imgs/circles.png")

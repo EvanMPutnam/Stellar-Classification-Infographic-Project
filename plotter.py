@@ -81,7 +81,7 @@ plt.title("HR Diagram with Stellar Classification")
 
 
 #Save off a file for infographic
-plt.savefig("../imgs/hr_diagram.png")
+plt.savefig("imgs/hr_diagram.png")
 
 #Show the plot of the data
 if SHOW_GRAPH:
