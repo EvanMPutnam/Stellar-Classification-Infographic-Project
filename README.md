@@ -10,6 +10,12 @@ Need to look at these.
 
 --> https://iopscience.iop.org/article/10.1088/0004-6256/149/4/131
 
+
+
+
+
+https://iopscience.iop.org/1538-3881/149/4/131/suppdata/aj509759t2_votable.xml
+
 ## Astronomer Sources
 --> http://www.isthe.com/chongo/tech/astro/HR-temp-mass-table-byhrclass.html
 By American Computer Scientist Landon Curt Noll.  He is best known for discovering 25th/26th Mersenne Prime number.  He is

@@ -1,7 +1,7 @@
 import PIL.Image, PIL.ImageDraw, PIL.ImageFont
+from config import *
 
 #Get nasa font information
-FONT_PATH = r"resources/nasalization-rg.ttf"
 FONT_NASA = PIL.ImageFont.truetype(FONT_PATH, 40)
 
 
@@ -33,6 +33,10 @@ for key in stellar_classification_data:
         draw.text((x - 15, y-80), key, fill = 'white', font = FONT_NASA)
     else:
         draw.text((x - 15, y-150), key, fill = 'white', font = FONT_NASA)
+
+#Draw text for hottest vs coldest
+draw.text((stellar_classification_data['O']['x']-65, stellar_classification_data['O']['y']+140), "Hottest", font=FONT_NASA, fill = 'white')
+draw.text((stellar_classification_data['m']['x']-80, stellar_classification_data['m']['y']+140), "Coldest", font=FONT_NASA, fill = 'white')
 
 #Save the image.
 img.save("imgs/circles.png")

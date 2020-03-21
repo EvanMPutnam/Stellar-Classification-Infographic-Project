@@ -1,13 +1,15 @@
+import os
 import csv
+import sys
 import math
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import font_manager as fm, rcParams
+from config import *
 
-#Change if you want do not want to show the graph.
-SHOW_GRAPH = True
-
-#Relative path to .csv file
-PATH = 'resources/star_data.csv'
+#Information for nasalization font.
+FONT_PATH = os.path.join(rcParams["datapath"], os.path.abspath(FONT_PATH))
+FONT_PROPS = fm.FontProperties(fname=FONT_PATH)
 
 #Index's for data points in .csv
 TYPE_INDEX = 0
@@ -41,7 +43,7 @@ category_mapping = {
 
 
 #Read the csv and get relevant data
-with open(PATH) as csv_file:
+with open(CSV_PATH) as csv_file:
     csv_reader = csv.reader(csv_file)
     for row in csv_reader:
         print(row)
@@ -70,15 +72,17 @@ ax.set_yscale('log')
 ax.set_xticks([2000, 5000, 10000, 20000, 40000])
 ax.set_ylim([0.0001,1000000])
 ax.set_xlim([0, 42000])
-ax.legend(prop={'size': 9})
+ax.legend(prop=FONT_PROPS)
 lims = plt.xlim()
 plt.xlim([lims[1], lims[0]]) 
 
-#Set graph information
-plt.xlabel("Temperature in Kelvin")
-plt.ylabel("Luminosity")
-plt.title("HR Diagram with Stellar Classification")
 
+#Set graph text information
+plt.xlabel("Temperature in Kelvin", fontproperties=FONT_PROPS)
+plt.ylabel("Luminosity", fontproperties=FONT_PROPS)
+plt.title("HR Diagram with Stellar Classification", fontproperties=FONT_PROPS)
+plt.yticks(fontproperties=FONT_PROPS, fontsize=10)
+plt.xticks(fontproperties=FONT_PROPS, fontsize=7)
 
 #Save off a file for infographic
 plt.savefig("imgs/hr_diagram.png")
