@@ -1,6 +1,12 @@
 # Description
 
-The goal of this infographic is to provide students with an understanding on how stellar classification works and how classification relates to a number of other stellar properties.
+The goal of this infographic is to provide students with an understanding on how stellar classification works and how classification relates to a number of other stellar properties.  The goal is to tell a story on how classification makes
+a star unique, and how it does that.  I do this by taking sample data and doing my own anaylsis from the datasets/sources to offer my own conclusions in infographic form, so that others can easily understand this topic.  
+
+### Charts
+All charts have been created with data from various scientific sources (later on in document).  The code/analysis/outputted graphs are my own. 
+
+
 
 # Sources of Data + Citations
 
@@ -35,10 +41,18 @@ By American Computer Scientist Landon Curt Noll.  He is best known for discoveri
 also an astronomer with publications in Sky and Telescope where he focuses mainly on asteroid research.
 
 ```
+
 Curt Noll, Landon. “Stellar Classification Table - Sorted by HR Class.” Isthe, www.isthe.com/chongo/tech/astro/HR-temp-mass-table-byhrclass.html.
 ```
 
 --> http://www.isthe.com/chongo/tech/astro/HR-temp-mass-table-byhrclass.html
+
+## Image Sources
+I used an image of the sun from a NASA Goddard research partner.
+
+```
+“HE II 304 A.” Solar Data Analysis Center, NASA Goddard, https://umbra.nascom.nasa.gov/images/latest_aia_304.gif?t=1584853039280.
+```
 
 # Python Files
 ## Star Sizes Graphic
