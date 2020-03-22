@@ -1,12 +1,24 @@
 # Description
+The goal of this infographic is to provide students with an understanding on how stellar classification works and how classification relates to a number of other stellar properties.  The goal is to tell a story of how classification makes
+a star unique.  I do this by taking sample data and doing my own anaylsis from the datasets/sources to offer my own conclusions in infographic form, so that others can easily understand this topic.  
 
-The goal of this infographic is to provide students with an understanding on how stellar classification works and how classification relates to a number of other stellar properties.  The goal is to tell a story on how classification makes
-a star unique, and how it does that.  I do this by taking sample data and doing my own anaylsis from the datasets/sources to offer my own conclusions in infographic form, so that others can easily understand this topic.  
+## Final Infographic
+The final infographic can be found in /imgs/final and is a combination of the generated charts, text, as well
+as an image from NASA Goddard (Credited below).
 
-### Charts
+![alt text](imgs/final/final.png "Final Infographic")
+
+## Charts
 All charts have been created with data from various scientific sources (later on in document).  The code/analysis/outputted graphs are my own. 
 
+## Code Requirements
+- Python3
+- Matplotlib
+- Numpy
+- PIL (Python Imaging Library)
 
+## Batch file
+There is a batch file that can be used to generate images on windows platforms.
 
 # Sources of Data + Citations
 
@@ -25,14 +37,6 @@ Habets, G.M.H.J., and J.R.W. Heintze. “Empirical Bolometric Corrections for th
 
 ```
 
---> https://ui.adsabs.harvard.edu/abs/2000A%26A...364..217D/abstract
-
---> https://iopscience.iop.org/article/10.1088/0004-6256/149/4/131
-
---> http://adsabs.harvard.edu/full/2001JRASC..95...32L      Stellar percentages.
-
---> http://adsabs.harvard.edu/full/1981A%26AS...46..193H    Stellar Radius
-
 
 
 ## Astronomer Sources
@@ -41,11 +45,8 @@ By American Computer Scientist Landon Curt Noll.  He is best known for discoveri
 also an astronomer with publications in Sky and Telescope where he focuses mainly on asteroid research.
 
 ```
-
 Curt Noll, Landon. “Stellar Classification Table - Sorted by HR Class.” Isthe, www.isthe.com/chongo/tech/astro/HR-temp-mass-table-byhrclass.html.
 ```
-
---> http://www.isthe.com/chongo/tech/astro/HR-temp-mass-table-byhrclass.html
 
 ## Image Sources
 I used an image of the sun from a NASA Goddard research partner.
